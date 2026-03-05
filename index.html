@@ -147,7 +147,7 @@
 <div class="cursor" id="cursor"></div>
 
 <nav>
-  <a href="#" class="nav-logo">Painted by Caroline</a>
+  <a href="#" class="nav-logo"></a>
   <ul class="nav-links">
     <li><a href="#portfolio">Work</a></li>
     <li><a href="#commissions">Commissions</a></li>
@@ -158,12 +158,12 @@
 
 <section class="hero">
   <div class="hero-left">
-    <p class="hero-eyebrow">Original art & commissions</p>
-    <h1 class="hero-title">Art made<br>with <em>heart</em><br>&amp; paint.</h1>
-    <p class="hero-sub">Landscapes, cities, florals, and figures — all hand-made with curiosity and a love of color.</p>
+    <p class="hero-eyebrow"></p>
+    <h1 class="hero-title"></h1>
+    <p class="hero-sub"></p>
     <div class="hero-actions">
-      <a href="#portfolio" class="btn-primary">View the work</a>
-      <a href="#commissions" class="btn-ghost">Commission a piece</a>
+      <a href="#portfolio" class="btn-primary"></a>
+      <a href="#commissions" class="btn-ghost"></a>
     </div>
   </div>
   <div class="hero-right">
@@ -173,9 +173,9 @@
 
 <section id="portfolio">
   <div class="portfolio-intro reveal">
-    <p class="section-label">Portfolio</p>
-    <h2 class="section-title">The <em>work</em></h2>
-    <p>A mix of paintings, drawings, and illustrations. Each piece is one-of-a-kind and available for purchase unless marked otherwise.</p>
+    <p class="section-label"></p>
+    <h2 class="section-title"></h2>
+    <p></p>
   </div>
   <div class="filter-tabs reveal" id="filterTabs">
     <button class="filter-tab active" data-filter="all">All</button>
@@ -190,13 +190,13 @@
 <section id="commissions">
   <div class="commission-grid">
     <div class="commission-text reveal">
-      <p class="section-label">Commissions</p>
-      <h2 class="section-title">A piece<br><em>made for you</em></h2>
-      <p>Have a place, memory, or moment that means something to you? I'd love to paint it. Commissions are open on a rolling basis with a typical 4–6 week turnaround.</p>
+      <p class="section-label"></p>
+      <h2 class="section-title"></h2>
+      <p></p>
       <div class="commission-steps">
-        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Share your vision</h4><p>Tell me the subject, size, and any reference photos you have.</p></div></div>
-        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Review & approve</h4><p>I'll send a sketch for your feedback before starting the final piece.</p></div></div>
-        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Receive your painting</h4><p>Carefully packaged and shipped straight to you.</p></div></div>
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4></h4><p></p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4></h4><p></p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4></h4><p></p></div></div>
       </div>
     </div>
     <div class="commission-form reveal">
@@ -213,24 +213,24 @@
 <section id="about">
   <div class="about-image reveal" id="aboutImg"></div>
   <div class="about-content reveal">
-    <p class="section-label">About</p>
-    <h2 class="section-title">Hello, I'm <em>Caroline</em></h2>
-    <p>I make art because I can't not. Landscapes that catch my eye, cities I've wandered through, flowers on my table, faces I've imagined — it all ends up on paper or canvas eventually.</p>
-    <p>I'm self-taught and still learning, which means every piece is a little experiment. Some work out better than others. I'm sharing them all anyway.</p>
-    <p>Based in San Francisco. Painting in whatever time I can find.</p>
-    <div class="about-signature">Caroline</div>
+    <p class="section-label"></p>
+    <h2 class="section-title"></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="about-signature"></div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-logo">Painted by Caroline</div>
+  <div class="footer-logo"></div>
   <ul class="footer-links">
     <li><a href="#portfolio">Work</a></li>
     <li><a href="#commissions">Commissions</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="/cdn-cgi/l/email-protection#2c44494040436c5c4d45425849484e554f4d5e4340454249024f4341">Contact</a></li>
   </ul>
-  <div class="footer-copy">© 2026 Painted by Caroline</div>
+  <div class="footer-copy"></div>
 </footer>
 
 <!-- Lightbox -->
@@ -246,25 +246,96 @@
 </div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const imgFolder = "Art/"; // subfolder the images are in 
+// =====================================================================
+// SITE TEXT — edit everything here to update the page
+// =====================================================================
+const siteText = {
+  nav: {
+    logo: "Painted by Caroline",
+  },
+  hero: {
+    eyebrow: "Original art & commissions",
+    title: "Art made<br>with <em>heart</em><br>& paint.",
+    sub: "Landscapes, cities, florals, and figures — all hand-made with curiosity and a love of color.",
+    btnPrimary: "View the work",
+    btnGhost: "Commission a piece",
+  },
+  portfolio: {
+    label: "Portfolio",
+    title: "The <em>work</em>",
+    description: "A mix of paintings, drawings, and illustrations. Each piece is one-of-a-kind and available for purchase unless marked otherwise.",
+  },
+  commissions: {
+    label: "Commissions",
+    title: "A piece<br><em>made for you</em>",
+    description: "Have a place, memory, or moment that means something to you? I'd love to paint it. Commissions are open on a rolling basis with a typical 4–6 week turnaround.",
+    steps: [
+      { title: "Share your vision",    body: "Tell me the subject, size, and any reference photos you have." },
+      { title: "Review & approve",     body: "I'll send a sketch for your feedback before starting the final piece." },
+      { title: "Receive your painting",body: "Carefully packaged and shipped straight to you." },
+    ],
+  },
+  about: {
+    label: "About",
+    title: "Hello, I'm <em>Caroline</em>",
+    paragraphs: [
+      "I make art because I can't not. Landscapes that catch my eye, cities I've wandered through, flowers on my table, faces I've imagined — it all ends up on paper or canvas eventually.",
+      "I'm self-taught and still learning, which means every piece is a little experiment. Some work out better than others. I'm sharing them all anyway.",
+      "Based in San Francisco. Painting in whatever time I can find.",
+    ],
+    signature: "Caroline",
+  },
+  footer: {
+    copy: "© 2026 Painted by Caroline",
+  },
+};
+
+// Apply site text to the page
+document.querySelector('.nav-logo').textContent = siteText.nav.logo;
+document.querySelector('.hero-eyebrow').textContent = siteText.hero.eyebrow;
+document.querySelector('.hero-title').innerHTML = siteText.hero.title;
+document.querySelector('.hero-sub').textContent = siteText.hero.sub;
+document.querySelector('.btn-primary').textContent = siteText.hero.btnPrimary;
+document.querySelector('.btn-ghost').textContent = siteText.hero.btnGhost;
+document.querySelector('.portfolio-intro .section-label').textContent = siteText.portfolio.label;
+document.querySelector('.portfolio-intro .section-title').innerHTML = siteText.portfolio.title;
+document.querySelector('.portfolio-intro p').textContent = siteText.portfolio.description;
+document.querySelector('.commission-text .section-label').textContent = siteText.commissions.label;
+document.querySelector('.commission-text .section-title').innerHTML = siteText.commissions.title;
+document.querySelector('.commission-text > p').textContent = siteText.commissions.description;
+document.querySelectorAll('.step').forEach((el, i) => {
+  el.querySelector('h4').textContent = siteText.commissions.steps[i].title;
+  el.querySelector('p').textContent = siteText.commissions.steps[i].body;
+});
+document.querySelector('.about-content .section-label').textContent = siteText.about.label;
+document.querySelector('.about-content .section-title').innerHTML = siteText.about.title;
+document.querySelectorAll('.about-content p:not(.section-label)').forEach((el, i) => {
+  if (siteText.about.paragraphs[i]) el.textContent = siteText.about.paragraphs[i];
+});
+document.querySelector('.about-signature').textContent = siteText.about.signature;
+document.querySelector('.footer-logo').textContent = siteText.nav.logo;
+document.querySelector('.footer-copy').textContent = siteText.footer.copy;
+
+const imgFolder = "Art/";
+
   const paintings = [
-  { src: imgFolder + "AltaPlaza.jpeg", title: 'Sunlit Pathway', medium: 'Acrylic' },
-  { src: imgFolder + "Auckland.jpeg", title: 'City Reflections', medium: 'Watercolor' },
-  { src: imgFolder + "Beachbig.jpeg", title: 'Floral Still Life', medium: 'Acrylic' },
-  { src: imgFolder + "BeachSmall.jpeg", title: 'Mountain Mist', medium: 'Acrylic' },
-  { src: imgFolder + "Citywalk.jpeg", title: 'Quiet Alley', medium: 'Ink' },
-  { src: imgFolder + "FlowerVase.jpeg", title: 'Golden Hour', medium: 'Ink' },
-  { src: imgFolder + "Hut.jpeg", title: 'Seaside Cliffs', medium: 'Watercolor' },
-  { src: imgFolder + "IrishRose.jpeg", title: 'Botanical Study', medium: 'Acrylic' },
-  { src: imgFolder + "LaQuinta.jpeg", title: 'Urban Rooftops', medium: 'Acrylic' },
-  { src: imgFolder + "Night.jpeg", title: 'Lakeside Shore', medium: 'Colored Pencil' },
-  { src: imgFolder + "FlowerClear.jpeg", title: 'Botanical Study', medium: 'Acrylic' },
-  { src: imgFolder + "RainbowFigure.jpeg", title: 'Urban Rooftops', medium: 'Colored Pencil' },
-  { src: imgFolder + "SFgate.jpeg", title: 'Lakeside Shore', medium: 'Acrylic' },
-  { src: imgFolder + "SFhome.jpeg", title: 'Botanical Study', medium: 'Acrylic' },
-  { src: imgFolder + "Sunset.jpeg", title: 'Urban Rooftops', medium: 'Acrylic' },
-  { src: imgFolder + "VaseInk.jpeg", title: 'Lakeside Shore', medium: 'Ink' },
-  { src: imgFolder + "VasesWatercolor.jpeg", title: 'Botanical Study', medium: 'Watercolor' },
+  { src: imgFolder + "AltaPlaza.jpeg", title: 'Alta Plaza Park', medium: 'Acrylic' },
+  { src: imgFolder + "Auckland.jpeg", title: 'Drive through Auckland', medium: 'Watercolor' },
+  { src: imgFolder + "Beachbig.jpeg", title: 'Aptos - Large', medium: 'Acrylic' },
+  { src: imgFolder + "BeachSmall.jpeg", title: 'Aptos - Small', medium: 'Acrylic' },
+  { src: imgFolder + "Citywalk.jpeg", title: 'Walk in the City', medium: 'Ink' },
+  { src: imgFolder + "FlowerVase.jpeg", title: 'Flower Vase', medium: 'Ink' },
+  { src: imgFolder + "Hut.jpeg", title: 'The Hut', medium: 'Watercolor' },
+  { src: imgFolder + "IrishRose.jpeg", title: 'Three Irish Roses', medium: 'Acrylic' },
+  { src: imgFolder + "LaQuinta.jpeg", title: 'Sun on the Deck', medium: 'Acrylic' },
+  { src: imgFolder + "Night.jpeg", title: 'Town at Night', medium: 'Colored Pencil' },
+  { src: imgFolder + "FlowerClear.jpeg", title: 'Flower Vase - Single', medium: 'Acrylic' },
+  { src: imgFolder + "RainbowFigure.jpeg", title: 'IDK', medium: 'Colored Pencil' },
+  { src: imgFolder + "SFgate.jpeg", title: 'Golden Gate', medium: 'Acrylic' },
+  { src: imgFolder + "SFhome.jpeg", title: 'Green Street', medium: 'Acrylic' },
+  { src: imgFolder + "Sunset.jpeg", title: 'Alabama Hills Sunset', medium: 'Acrylic' },
+  { src: imgFolder + "VaseInk.jpeg", title: 'Flower Vase Outline', medium: 'Ink' },
+  { src: imgFolder + "VasesWatercolor.jpeg", title: 'Minneapolis Vase', medium: 'Watercolor' },
   
  ]; 
 // Cursor
