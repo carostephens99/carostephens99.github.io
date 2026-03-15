@@ -319,31 +319,35 @@ document.querySelector('.footer-copy').textContent = siteText.footer.copy;
 const imgFolder = "Art/";
 
   const paintings = [
-  { src: imgFolder + "AltaPlaza.jpeg", title: 'Alta Plaza Park', medium: 'Acrylic' },
-  { src: imgFolder + "Auckland.jpeg", title: 'Drive through Auckland', medium: 'Watercolor' },
-  { src: imgFolder + "Beachbig.jpeg", title: 'Aptos - Large', medium: 'Acrylic' },
-  { src: imgFolder + "BeachSmall.jpeg", title: 'Aptos - Small', medium: 'Acrylic' },
-  { src: imgFolder + "Citywalk.jpeg", title: 'Walk in the City', medium: 'Ink' },
-  { src: imgFolder + "FlowerVase.jpeg", title: 'Flower Vase', medium: 'Ink' },
-  { src: imgFolder + "Hut.jpeg", title: 'The Hut', medium: 'Watercolor' },
-  { src: imgFolder + "IrishRose.jpeg", title: 'Three Irish Roses', medium: 'Acrylic' },
-  { src: imgFolder + "LaQuinta.jpeg", title: 'La Quinta', medium: 'Acrylic' },
-  { src: imgFolder + "Night.jpeg", title: 'Town at Night', medium: 'Colored Pencil' },
-  { src: imgFolder + "FlowerClear.jpeg", title: 'Flower Vase - Single', medium: 'Ink' },
-  { src: imgFolder + "RainbowFigure.jpeg", title: 'IDK', medium: 'Colored Pencil' },
-  { src: imgFolder + "SFgate.jpeg", title: 'Golden Gate', medium: 'Acrylic' },
-  { src: imgFolder + "SFhome.jpeg", title: 'Green Street', medium: 'Acrylic' },
-  { src: imgFolder + "Sunset.jpeg", title: 'Alabama Hills Sunset', medium: 'Acrylic' },
-  { src: imgFolder + "VasesInk.jpeg", title: 'Flower Vase Outline', medium: 'Ink' },
-  { src: imgFolder + "VasesWatercolor.jpeg", title: 'Minneapolis Vase', medium: 'Watercolor' },
-  { src: imgFolder + "BeachFamily.jpeg", title: 'Family on the Beach', medium: 'Acrylic' },
-  { src: imgFolder + "ChrissyField.jpeg", title: 'Crissy Field', medium: 'Acrylic' },
-  { src: imgFolder + "Plant1.jpeg", title: 'Plant 1', medium: 'Watercolor' },
-  { src: imgFolder + "Plant2.jpeg", title: 'Plant 2', medium: 'Watercolor' },
-  { src: imgFolder + "beachboy.jpeg", title: 'Auckland Beach', medium: 'Ink' },
-  { src: imgFolder + "aucklanddrive.jpeg", title: 'Auckland Drive', medium: 'Watercolor' },
-  { src: imgFolder + "facepaint.jpeg", title: 'Face Paint', medium: 'Watercolor' },
-  { src: imgFolder + "flowerbowl.jpeg", title: 'Plant 3', medium: 'Watercolor' },
+  { src: imgFolder + "AltaPlaza.jpeg", title: 'Alta Plaza Park', medium: 'Acrylic', size: '8x11"' },
+  { src: imgFolder + "Auckland.jpeg", title: 'Drive through Auckland', medium: 'Watercolor', size: '8x11"' },
+  { src: imgFolder + "Beachbig.jpeg", title: 'Aptos - Large', medium: 'Acrylic', size: '16x11"' },
+  { src: imgFolder + "BeachSmall.jpeg", title: 'Aptos - Small', medium: 'Acrylic', size: '7x5"' },
+  { src: imgFolder + "Citywalk.jpeg", title: 'Walk in the City', medium: 'Ink', size: '8x11"' },
+  { src: imgFolder + "FlowerVase.jpeg", title: 'Flower Vase', medium: 'Ink', size: '24x21"' },
+  { src: imgFolder + "Hut.jpeg", title: 'The Hut', medium: 'Watercolor', size: '7x5"' },
+  { src: imgFolder + "IrishRose.jpeg", title: 'Three Irish Roses', medium: 'Acrylic', size: '8x11"' },
+  { src: imgFolder + "LaQuinta.jpeg", title: 'La Quinta', medium: 'Acrylic', size: '16x11"' },
+  { src: imgFolder + "Night.jpeg", title: 'Town at Night', medium: 'Colored Pencil', size: '8x11"' },
+  { src: imgFolder + "FlowerClear.jpeg", title: 'Flower Vase - Single', medium: 'Ink', size: '40x28"' },
+  { src: imgFolder + "RainbowFigure.jpeg", title: 'IDK', medium: 'Colored Pencil', size: '8x11"' },
+  { src: imgFolder + "SFgate.jpeg", title: 'Golden Gate', medium: 'Acrylic', size:'16x11"' },
+  { src: imgFolder + "SFhome.jpeg", title: 'Green Street', medium:'Acrylic' , size:'16x11"' },
+  { src: imgFolder + "Sunset.jpeg", title:'Alabama Hills Sunset' , medium:'Acrylic' , size:'22x22"' },
+  { src: imgFolder + "VasesInk.jpeg", title: 'Flower Vase Outline', medium: 'Ink', size: '9x12"' },
+  { src: imgFolder + "VasesWatercolor.jpeg", title: 'Minneapolis Vase', medium: 'Watercolor', size: '7x5"' },
+  { src: imgFolder + "BeachFamily.jpeg", title: 'Family on the Beach', medium: 'Acrylic', size: '16x11"' },
+  { src: imgFolder + "ChrissyField.jpeg", title: 'Crissy Field', medium: 'Acrylic', size: '16x11"' },
+  { src: imgFolder + "Plant1.jpeg", title: 'Plant 1', medium: 'Watercolor', size: '8x11"' },
+  { src: imgFolder + "Plant2.jpeg", title: 'Plant 2', medium: 'Watercolor', size: '8x11"' },
+  { src: imgFolder + "beachboy.jpeg", title: 'Auckland Beach', medium: 'Ink', size:'16x11"' },
+  { src: imgFolder + "aucklanddrive.jpeg", title: 'Auckland Drive', medium: 'Watercolor', size:'8x11"' },
+  { src: imgFolder + "facepaint.jpeg", title: 'Face Paint', medium:'Watercolor' , size:'8x11"' },
+  { src: imgFolder + "flowerbowl.jpeg", title: 'Plant 3', medium:'Watercolor' , size:'8x11"' },
+  { src: imgFolder + "frankocean.jpeg", title: 'Blond - Frank Ocean', medium: 'Ink', size: '8x11"' },
+  { src: imgFolder + "pinkypromise.jpeg", title: 'Pinky Promise', medium: 'Watercolor', size: '7x5"' },
+  { src: imgFolder + "flowerhead.jpeg", title: 'Dreamer', medium: 'Watercolor', size: '8x11"' },
+  { src: imgFolder + "overwhelmed.jpeg", title: 'Headache', medium: 'Colored Pencil', size: '8x11"' }, 
 
  ]; 
 // Cursor
@@ -395,12 +399,12 @@ function buildGallery(filter) {
     const item = document.createElement('div');
     item.className = 'gallery-item';
     item.innerHTML = `
-      <img src="${p.src}" alt="${p.title}" loading="lazy">
-      <div class="overlay">
-        <div class="overlay-title">${p.title}</div>
-        <div class="overlay-meta">${p.medium}</div>
-        <button class="overlay-btn" data-index="${i}">View</button>
-      </div>`;
+    <img src="${p.src}" alt="${p.title}" loading="lazy">
+    <div class="overlay">
+      <div class="overlay-title">${p.title}</div>
+      <div class="overlay-meta">${p.medium}${p.size ? ' · ' + p.size : ''}</div>
+      <button class="overlay-btn" data-index="${i}">View</button>
+  </div>`;
     item.querySelector('.overlay-btn').addEventListener('click', () => openLightbox(i));
     item.addEventListener('click', () => openLightbox(i));
     gallery.appendChild(item);
